@@ -2,6 +2,7 @@
 
 ### Klipper
 * [Klippain](https://github.com/Frix-x/klippain)
+* [Kiauh](https://github.com/dw-0/kiauh)
 
 ### Gestion des Leds
 * [Led Effect](https://github.com/julianschill/klipper-led_effect)
