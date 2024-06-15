@@ -1,3 +1,14 @@
-# Klipper : Liste des plugins utilisés
+# Klipper : Liste des plugins utilisés sur ma Voron v2.3941
 
-[Led Effect](https://github.com/julianschill/klipper-led_effect)
+### Klipper
+* [Klippain](https://github.com/Frix-x/klippain)
+
+### Gestion des Leds
+* [Led Effect](https://github.com/julianschill/klipper-led_effect)
+
+### Webcam
+* [Crowsnest](https://crowsnest.mainsail.xyz/)
+
+### Klipperscreen
+* [Klipperscreen](https://github.com/bigtreetech/KlipperScreen)
+* [Touchscreen Setup for Klipper](https://docs.ldomotors.com/en/guides/btt_43_rotate_guide)
