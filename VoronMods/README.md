@@ -11,4 +11,5 @@
 * [X] [Led Effect](https://github.com/julianschill/klipper-led_effect)
 * [X] [GE5C](https://mods.vorondesign.com/details/eB5T2RNQcYI4o6cilhpXEg)
 * [X] [CanBus](https://github.com/chripink/CanBus-Tuto)
+* [X] Ecran BTT PiTFT 5"  
 * [ ] [ERCF v2](https://github.com/Enraged-Rabbit-Community/ERCF_v2) → en cours de montage
