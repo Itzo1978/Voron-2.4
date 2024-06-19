@@ -1,11 +1,11 @@
 # Hooktry
 
-* [ ] En conception
-* [X] En cours de validation
-* [ ] Validé !
+* [ ] In design
+* [X] In progress
+* [ ] Validated !
 
-## Description du Hooktry
-Il permet de crocheter la gantry de la Voron à une hauteur de 200mm. 
-Insérer les 4 Hooktry dans les rainures du profilé (20x0 typ 6)du chassîs supérieur et de la gantry
+## Hooktry description
+Allows you to hook the Voron's gantry at a height of 200mm. 
+Insert the 4 Hooktry in the profile grooves (20x0 typ 6) of the upper frame and gantry.
 
-![Vue arrière](https://github.com/Itzo1978/Voron-2.4/blob/main/VoronMods/Hooktry/Images/hooktry.png)
+![hooktry](https://github.com/Itzo1978/Voron-2.4/blob/main/VoronMods/Hooktry/Images/hooktry.png)
