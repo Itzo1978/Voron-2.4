@@ -5,6 +5,11 @@
 * 1x Skirts for Voron 2.4 (with 1x or more Ø23)
 
 ## Pinout
+* Exemple 1
 ![MBS pinout](https://github.com/Itzo1978/Voron-2.4/blob/main/VoronMods/MBS%20on%20Skirts%20for%20Voron%202.4%20350/Images/image1.png)
+
+* Exemple 2
 ![MBS pinout](https://github.com/Itzo1978/Voron-2.4/blob/main/VoronMods/MBS%20on%20Skirts%20for%20Voron%202.4%20350/Images/image2.png)
+
+* Exemple 3
 ![MBS pinout](https://github.com/Itzo1978/Voron-2.4/blob/main/VoronMods/MBS%20on%20Skirts%20for%20Voron%202.4%20350/Images/image3.png)
