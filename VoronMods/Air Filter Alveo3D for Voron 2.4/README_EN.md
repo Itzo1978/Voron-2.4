@@ -28,7 +28,9 @@ En français [ici](https://github.com/Itzo1978/Voron-Mods/blob/master/Air%20Filt
 
   
 **MATERIAL** 
-- PETG or ABS. For PLA, not recommended in the long term...
+- PETG, ASA or ABS. 
+
+PLA is not recommended: it becomes very brittle over time... 
 
 
 ** ASSEMBLY **

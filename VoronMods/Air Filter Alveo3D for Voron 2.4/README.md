@@ -28,7 +28,9 @@ In english [here](https://github.com/Itzo1978/Voron-2.4/blob/main/VoronMods/Air%
 
   
 **MATIÈRE** 
-- PETG ou ABS. Pour le PLA, déconseillé à long terme... 
+- PETG, ASA ou ABS. 
+
+PLA déconseillé : il devient très cassant à long terme... 
 
 
 **MONTAGE**
