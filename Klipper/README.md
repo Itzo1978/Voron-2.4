@@ -4,6 +4,7 @@
 * [Klippain](https://github.com/Frix-x/klippain)
 
 <hr>
+
 ## KIAUH
 * [Kiauh](https://github.com/dw-0/kiauh)
 
@@ -21,6 +22,7 @@
     ./kiauh/kiauh.sh
 
 <hr>
+
 ## GESTION DES LEDS
 * [Led Effect](https://github.com/julianschill/klipper-led_effect)
 
@@ -31,10 +33,12 @@
     cd klipper-led_effect
     ./install-led_effect.sh
 
-
+<hr>
+	
 ## WEBCAM
 * [Crowsnest](https://crowsnest.mainsail.xyz/)
 
+<hr>
 
 ## KLIPPERSCREEN
 * [Klipperscreen](https://github.com/bigtreetech/KlipperScreen)
