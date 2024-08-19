@@ -9,12 +9,15 @@
 
 ### Installation de Kiauh :
 1ère étape :
+
     sudo apt-get update && sudo apt-get install git -y
 
 2ème étape :
+
     cd ~ && git clone https://github.com/dw-0/kiauh.git
 
 3ème étape :
+
     ./kiauh/kiauh.sh
 
 
@@ -23,10 +26,10 @@
 
 ### Installation de Led Effect :
 
-    <code>cd ~
+    cd ~
     git clone https://github.com/julianschill/klipper-led_effect.git
     cd klipper-led_effect
-    ./install-led_effect.sh</code>
+    ./install-led_effect.sh
 
 
 ## Webcam
@@ -35,18 +38,3 @@
 ## Klipperscreen
 * [Klipperscreen](https://github.com/bigtreetech/KlipperScreen)
 * [Touchscreen Setup for Klipper](https://docs.ldomotors.com/en/guides/btt_43_rotate_guide)
-
-
-## Installation des logiciels depuis Putty
-./klipper-led_effect/install-led_effect.sh  
-./kiauh/kiauh.sh
-
-
-### Automatic installation
-
-The module can be installed into a existing Klipper installation with an install script. 
-
-    cd ~
-    git clone https://github.com/julianschill/klipper-led_effect.git
-    cd klipper-led_effect
-    ./install-led_effect.sh
