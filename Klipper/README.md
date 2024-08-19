@@ -3,7 +3,7 @@
 ## KLIPPER
 * [Klippain](https://github.com/Frix-x/klippain)
 
-
+<hr>
 ## KIAUH
 * [Kiauh](https://github.com/dw-0/kiauh)
 
@@ -20,8 +20,8 @@
 
     ./kiauh/kiauh.sh
 
-
-## Gestion des Leds
+<hr>
+## GESTION DES LEDS
 * [Led Effect](https://github.com/julianschill/klipper-led_effect)
 
 ### Installation de Led Effect :
@@ -32,9 +32,10 @@
     ./install-led_effect.sh
 
 
-## Webcam
+## WEBCAM
 * [Crowsnest](https://crowsnest.mainsail.xyz/)
 
-## Klipperscreen
+
+## KLIPPERSCREEN
 * [Klipperscreen](https://github.com/bigtreetech/KlipperScreen)
 * [Touchscreen Setup for Klipper](https://docs.ldomotors.com/en/guides/btt_43_rotate_guide)
