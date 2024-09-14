@@ -72,18 +72,21 @@ Installez Shake&Tune en l'exécutant via SSH sur votre imprimante :
 
 <hr>
 
-### CanBus EBB42
+## Installation CanBus EBB42
+
+### Sur votre imprimante
 
 Avant de commencer, assurez-vous que votre imprimante est éteinte.
 
-1. Insérer la prise USB-C sur la carte EBB42 (ou similaire)
+1. Insérer la prise USB-C sur la carte EBB42 (ou similaire) et sur votre raspberry pour assurer une connexion
 <center><img src="Images\CanBus 1.png"></center>
 
 2. Insérer le jumper sur la carte
 <center><img src="Images\CanBus 2.png"></center>
 
 3. Appuyer sur le bouton DFU __en même temps__ que vous allumer votre imprimante
-<center><img src="Images\CanBus 2.png"></center>
+<center><img src="Images\CanBus 3.png"></center>
+
 
 <hr>
 
