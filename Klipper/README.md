@@ -1,3 +1,7 @@
+# CHECK-LIST
+
+* [Check-list des plugins à installer](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Check-list_v2.3941.md)
+
 # LISTE DES PLUGINS UTILISÉS SUR MA VORON V2.3941
 
 * [Beacon 3D](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Beacon3D.md)
