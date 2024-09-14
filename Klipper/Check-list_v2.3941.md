@@ -179,6 +179,8 @@ Flasher votre carte (veuillez remplacer `4b928e40f4ba` par votre numéro identif
     python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 4b928e40f4ba
 	sudo service klipper start
 
+Merci [Chripink](https://github.com/chripink/CanBus-Tuto) pour son incroyable tuto dont je me suis inspiré
+
 <hr>
 
 ### XXXXX
