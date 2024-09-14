@@ -186,14 +186,14 @@ Flasher votre carte (veuillez remplacer `4b928e40f4ba` par votre numéro identif
 
 ## INSTALLATION DE LA SONDE [BEACON 3D](https://docs.beacon3d.com/)
 
-## Installation du module Klipper du Beacon
+### Installation du module Klipper du Beacon
 Clonez `beacon_klipper` depuis git et exécutez le script d'installation :
 
     cd ~
     git clone https://github.com/beacon3d/beacon_klipper.git
     ./beacon_klipper/install.sh
 	
-## Configuration Moonraker Update Manager (en option)¶
+### Configuration Moonraker Update Manager (en option)¶
 Si votre imprimante fonctionne avec Moonraker, vous pouvez configurer le gestionnaire de mise à jour pour Beacon.
 Vous devrez ajouter la section suivante au fichier `moonraker.conf` :
 
@@ -211,7 +211,7 @@ Vous devrez ajouter la section suivante au fichier `moonraker.conf` :
       desc=Beacon Surface Scanner
 
 
-# Calibration du Beacon3D
+### Calibration du Beacon3D
 
 Faites un homing des axes X and Y:
 
