@@ -1,8 +1,8 @@
 ## Check-list pour une bonne installation
 
 ### Installation Pi Imager
-* **Modèle de Raspberry :** selon votre modèle
-* **Système d'exploitation :** voir images ci-dessous
+* __Modèle de Raspberry :__ selon votre modèle
+* __Système d'exploitation :__ voir images ci-dessous
 
 <center><img src="Images\Raspberry Pi Imager 1.png"></center><br>
 <center><img src="Images\Raspberry Pi Imager 2.png"></center>
@@ -27,7 +27,9 @@
 
 <center><img src="Images\kiauh.png"></center>
 
-Rebooter votre Raspberry et 
+Rebooter votre Raspberry et redémarrer votre session
+
+<center><img src="Images\putty 1.png"></center>
 
 <hr>
 
