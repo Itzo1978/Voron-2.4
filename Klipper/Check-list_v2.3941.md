@@ -1,7 +1,11 @@
 ## Check-list pour une bonne installation
 
 ### Installation Pi Imager
+* Modèle de Raspberry : selon votre modèle
+* Système d'exploitation : voir images ci-dessous
 
+<center><img src="Images\Raspberry Pi Imager 1.png"></center><br>
+<center><img src="Images\Raspberry Pi Imager 2.png"></center>
 <hr>
 
 ### Mise à jour kernel stable linux : 
@@ -21,7 +25,9 @@
 * Installation de Klipper (1), Moonraker (2), Mainsail (3) et Crowsnest (14)
 * _En option : Spoolman (13) pour l'ERCF_
 
-<img src="Images\kiauh.png">
+<center><img src="Images\kiauh.png"></center>
+
+Rebooter votre Raspberry
 
 <hr>
 
