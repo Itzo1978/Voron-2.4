@@ -5,8 +5,8 @@ Installation de TMC Autotune :
 
     wget -O - https://raw.githubusercontent.com/andrewmcgr/klipper_tmc_autotune/main/install.sh | bash
 
-Mes moteurs actuels:
-* Moteur A/B
+## Mes moteurs actuels:
+### Moteur A/B
 
     [motor_constants omc-17hs19-2004s1]
     resistance: 1.4
@@ -15,7 +15,7 @@ Mes moteurs actuels:
     max_current: 2
     steps_per_revolution: 200
 
-* Moteur Z/Z1/Z2/Z3
+### Moteur Z/Z1/Z2/Z3
 
     [motor_constants omc-17hs19-2004s1]
     resistance: 1.4
@@ -24,7 +24,7 @@ Mes moteurs actuels:
     max_current: 2
     steps_per_revolution: 200
 
-* Moteur Extrudeur (LGX Extuder)
+### Moteur Extrudeur (Bondtech LGX)
 
     [motor_constants bondtech-42H025H-0704A-005]
 	#Bondtech LGX https://www.bondtech.se/downloads/TDS/Bondtech-LGX-Motor-42H025H-0704-002.pdf
