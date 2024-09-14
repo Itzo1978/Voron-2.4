@@ -18,14 +18,14 @@ Après avoir insérer la carte SD dans votre rasperry, allumer votre imprimante 
 
 <hr>
 
-### Installation des différents outils : 
+### 	Installation des différents outils : 
 
     sudo apt-get install git -y && sudo apt-get install dfu-util -y
 
 
 <hr>
 
-### Installation de [Kiauh](https://github.com/dw-0/kiauh)
+### 	Installation de [Kiauh](https://github.com/dw-0/kiauh)
 
 Pour télécharger ce script, il est nécessaire d'avoir installé git. Si vous n'avez pas installé git, ou si vous n'êtes pas sûr, exécutez la commande suivante :
 
@@ -51,7 +51,7 @@ Rebooter votre Raspberry et redémarrer votre session
 
 <hr>
 
-### Installation de [Klippain](https://github.com/Frix-x/klippain)
+### 	Installation de [Klippain](https://github.com/Frix-x/klippain)
 
 Lancer la procédure d'installation
 
@@ -65,7 +65,7 @@ Lancer la procédure d'installation
 
 <hr>
 
-### Installation de Shake&Tune
+### 	Installation de Shake&Tune
 Installez Shake&Tune en l'exécutant via SSH sur votre imprimante :
 
     wget -O - https://raw.githubusercontent.com/Frix-x/klippain-shaketune/main/install.sh | bash
@@ -74,7 +74,7 @@ Installez Shake&Tune en l'exécutant via SSH sur votre imprimante :
 
 ## Installation CanBus EBB42
 
-### Sur votre imprimante
+### 	Sur votre imprimante
 
 Avant de commencer, assurez-vous que votre imprimante est éteinte.
 
@@ -87,7 +87,7 @@ Avant de commencer, assurez-vous que votre imprimante est éteinte.
 3. Appuyer sur le bouton DFU __en même temps__ que vous allumer votre imprimante
 <center><img src="Images\CanBus 3.png"></center>
 
-### Dans SSH (avec Putty ou autre)
+### 	Dans SSH (avec Putty ou autre)
 
 Connectez-vous à votre Imprimante en SSH.
 Installez DFU_UTIL avec la commande suivante :
@@ -99,7 +99,7 @@ Assurez vous que votre carte est bien détectée en mode DFU et taper `lsusb` po
 
 Répeter cette opération jusqu'à l'identification de la carte qui se nomme `0483:df11` dans mon cas.
 
-### CanBoot
+### 	CanBoot
 
 Installation de CanBoot avec compilation pour notre carte MCU
 
@@ -121,7 +121,7 @@ On peut maintenant flasher le Bootloader qu'on a compilé
 
 <center><img src="Images\CanBus 7.png"></center>
 
-### Configuration du CAN sur le Raspberry
+### 	Configuration du CAN sur le Raspberry
 Installer nano si ce n'est pas déja fait
 
     sudo apt update && sudo apt install nano -y
@@ -143,12 +143,12 @@ Pour quitter, appuyer sur CTRL + X
 
 Vous pouvez éteindre l'imprimante, retirer le cable USB et insérer le cable dédié
 
-### Cablage du CAN Bus
+### 	Cablage du CAN Bus
 
 Brancher tous les éléments sur la carte (cartouche, sonde, ventilateur) et allumer l'imprimante
 <center><img src="Images\CanBus 8.png"></center>
 
-### Flash Klipper sur EBB
+### 	Flash Klipper sur EBB
 
 Paramétrer Klipper selon la carte EBB utilisée
 
