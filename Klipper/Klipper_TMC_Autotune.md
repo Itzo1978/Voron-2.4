@@ -5,6 +5,31 @@ Installation de TMC Autotune :
 
     wget -O - https://raw.githubusercontent.com/andrewmcgr/klipper_tmc_autotune/main/install.sh | bash
 
+## Installation sur Klipper
+A insérer dans le fichier `printer.cgf`
+	
+    [autotune_tmc stepper_x]
+	motor: omc-17hs19-2004s1
+	
+	[autotune_tmc stepper_y]
+	motor: omc-17hs19-2004s1
+	
+	[autotune_tmc stepper_z]
+	motor: omc-17hs19-2004s1
+	
+	[autotune_tmc stepper_z1]
+	motor: omc-17hs19-2004s1
+	
+	[autotune_tmc stepper_z2]
+	motor: omc-17hs19-2004s1
+	
+	[autotune_tmc stepper_z3]
+	motor: omc-17hs19-2004s1
+	
+	[autotune_tmc extruder]
+	motor: bondtech-42H025H-0704A-005
+
+
 ## Mes moteurs actuels:
 ### Moteur A/B
 
