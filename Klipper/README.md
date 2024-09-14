@@ -6,4 +6,5 @@
 * [Kiauh](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Kiauh.md)
 * [Klipper](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Klipper.md)
 * [Klipperscreen](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Klipperscreen.md)
+* [TMC Autotune](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Klipper_TMC_Autotune.md)
 * [Webcam](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Webcam.md)
