@@ -33,6 +33,8 @@ Rebooter votre Raspberry et redémarrer votre session
 
 <hr>
 
+<H1>A FAIRE</H1>
+
 ### Installation de [Klippain](https://github.com/Frix-x/klippain)
 Intégrer mes fichiers suivants :
 * Répertoire `_MaConfig`
