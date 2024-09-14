@@ -286,7 +286,7 @@ Vous devrez ajouter la section suivante au fichier `moonraker.conf` :
 
 ### Calibration du Beacon3D
 
-Faites un homing des axes X and Y:
+Faites un homing des axes X et Y :
 
     G28 X Y
 
@@ -310,22 +310,6 @@ Lorsque vous êtes satisfait de la resistance entre votre feuille de papier ou d
 La réponse du capteur sera automatiquement mesurée et adaptée à un modèle. Enregistrez les résultats dans votre fichier de configuration :
 
     SAVE_CONFIG
-
-<hr>
-
-### XXXXX
-
-<hr>
-
-### XXXXX
-
-<hr>
-
-### XXXXX
-
-<hr>
-
-### XXXXX
 
 <hr>
 
