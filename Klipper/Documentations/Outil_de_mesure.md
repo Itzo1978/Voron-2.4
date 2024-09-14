@@ -1,7 +1,7 @@
 # OUTIL DE MESURE
 
 ## GT2 Belt Tension Meter
-<center><img src="Images\GT2 Belt Tension Meter.png"></center>
+<center><img src="..\Images\GT2 Belt Tension Meter.png"></center>
 
 * Moteurs A et B : entre 1.8 et 2.3
 	* Ma mesure : __2.0__
