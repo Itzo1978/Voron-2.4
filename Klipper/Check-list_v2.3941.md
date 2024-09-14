@@ -107,6 +107,42 @@ Installation de CanBoot avec compilation pour notre carte MCU
 	cd CanBoot
 	make menuconfig
 
+Voici vue sur la configuration à effectuer
+<center><img src="Images\CanBus 5.png"></center>
+
+Quand c'est en ordre, quitter en tapant sur `Q` et confirmer par `Y`
+
+Créer la compilation en tapant `make`.
+<center><img src="Images\CanBus 6.png"></center>
+
+On peut maintenant flasher le Bootloader qu'on a compilé
+
+    sudo dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000:force:mass-erase -D ~/CanBoot/out/canboot.bin
+
+<center><img src="Images\CanBus 7.png"></center>
+
+### Configuration du CAN sur le Raspberry
+Installer nano si ce n'est pas déja fait
+
+    sudo apt update && sudo apt install nano -y
+
+Créer le fichier de configuration pour le port CAN. Copier Coller d'un bloc.
+
+    sudo /bin/sh -c "cat > /etc/network/interfaces.d/can0" << EOF
+    allow-hotplug can0
+    iface can0 can static
+     bitrate 500000
+     up ifconfig \$IFACE txqueuelen 1024
+    EOF
+
+Ouvrez le fichier et vérifiez le code inséré :
+
+    sudo nano /etc/network/interfaces.d/can0
+	
+Pour quitter : CTRL + X
+
+Vous pouvez éteindre l'imprimante
+
 <hr>
 
 ### XXXXX
