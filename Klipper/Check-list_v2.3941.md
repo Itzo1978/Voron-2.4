@@ -1,6 +1,6 @@
 # Check-list pour une bonne installation
 
-## Installation Pi Imager
+## INSTALLATION AVEC RASPBERRY PI IMAGER
 * __Modèle de Raspberry :__ selon votre modèle
 * __Système d'exploitation :__ voir images ci-dessous
 
@@ -8,7 +8,7 @@
 <center><img src="Images\Raspberry Pi Imager 2.png"></center>
 <hr>
 
-## Installation Klipper
+## INSTALLATION KLIPPER
 
 Après avoir insérer la carte SD dans votre rasperry, allumer votre imprimante et lancer l'application Putty pour piloter en SSH votre raspberry
 
@@ -72,7 +72,7 @@ Installez Shake&Tune en l'exécutant via SSH sur votre imprimante :
 
 <hr>
 
-## Installation CanBus EBB42
+## INSTALLATION CANBUS EBB42
 
 ### 	Sur votre imprimante
 
