@@ -31,21 +31,26 @@ Vous devrez ajouter la section suivante au fichier `moonraker.conf` :
 # Calibration du Beacon3D
 
 Faites un homing des axes X and Y:
+
     G28 X Y
 
 Positionner votre buse au centre du plateau chauffant. Vous devrez ajuster les coordonnées de votre machine, ou n'hésitez pas à utiliser l'interface web.
+
     G0 X175 Y145
 
 Démarrer le process de calibration :
+
     BEACON_CALIBRATE
 
 Procéder au réglage de la distance entre votre buse et votre plateau chauffant.
-La distance est équivalent d'une feuille de papier. Vous pouvez aussi utilisez des clinquants de 0.15 d'épaisseur
+La distance est équivalent d'une feuille de papier. Vous pouvez aussi utilisez des clinquants de 0.15 d'épaisseur :
+
     TESTZ Z=-0.01
 
 Lorsque vous êtes satisfait de la resistance entre votre feuille de papier ou de votre clinquant, accepter pour terminer :
+
     ACCEPT
 
 La réponse du capteur sera automatiquement mesurée et adaptée à un modèle. Enregistrez les résultats dans votre fichier de configuration :
-    SAVE_CONFIG
 
+    SAVE_CONFIG
