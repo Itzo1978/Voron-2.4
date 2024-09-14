@@ -19,12 +19,14 @@
 
 ### Installation de [Kiauh](https://github.com/dw-0/kiauh)
 * Installation de Klipper (1), Moonraker (2), Mainsail (3) et Crowsnest (14)
-* En option : Spoolman (13) pour l'ERCF
-
+* _En option : Spoolman (13) pour l'ERCF_
 
 <hr>
 
-### XXXXX
+### Installation de [Klippain](https://github.com/Frix-x/klippain)
+Intégrer mes fichiers suivants :
+* Répertoire `_MaConfig`
+* fichier `override.cfg`
 
 <hr>
 
