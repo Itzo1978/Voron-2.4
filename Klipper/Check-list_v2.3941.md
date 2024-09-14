@@ -26,8 +26,25 @@ Lancer l'application Putty pour piloter en SSH votre raspberry
 <hr>
 
 ### Installation de [Kiauh](https://github.com/dw-0/kiauh)
+
+1. Etape 1 :
+Pour télécharger ce script, il est nécessaire d'avoir installé git. Si vous n'avez pas installé git, ou si vous n'êtes pas sûr, exécutez la commande suivante :
+
+    sudo apt-get update && sudo apt-get install git -y
+
+2. Etape 2:
+Une fois git installé, utilisez la commande suivante pour télécharger KIAUH dans votre répertoire personnel :
+
+    cd ~ && git clone https://github.com/dw-0/kiauh.git
+
+3. Etape 3:
+Démarrer KIAUH en copiant la commande ci-dessous :
+
+    ./kiauh/kiauh.sh
+
+
 * Installation de Klipper (1), Moonraker (2), Mainsail (3) et Crowsnest (14)
-* _En option : Spoolman (13) pour l'ERCF_
+* _En option : Spoolman (13) pour l'[ERCF](https://github.com/Enraged-Rabbit-Community/ERCF_v2)_
 
 <center><img src="Images\kiauh.png"></center>
 
