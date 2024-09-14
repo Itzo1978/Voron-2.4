@@ -99,9 +99,13 @@ Assurez vous que votre carte est bien détectée en mode DFU et taper `lsusb` po
 
 Répeter cette opération jusqu'à l'identification de la carte qui se nomme `0483:df11` dans mon cas.
 
-<hr>
+### CanBoot
 
-### XXXXX
+Installation de CanBoot avec compilation pour notre carte MCU
+
+    git clone https://github.com/Arksine/CanBoot
+	cd CanBoot
+	make menuconfig
 
 <hr>
 
