@@ -89,15 +89,15 @@ Avant de commencer, assurez-vous que votre imprimante est éteinte.
 
 ### Dans SSH (avec Putty ou autre)
 
-1. Connectez-vous à votre Imprimante en SSH.
-2. Installez DFU_UTIL avec la commande suivante :
+Connectez-vous à votre Imprimante en SSH.
+Installez DFU_UTIL avec la commande suivante :
 
     sudo apt install dfu-util -y
 
-3. Assurez vous que votre carte est bien détectée en mode DFU et taper `lsusb` pour identifier notre carte
+Assurez vous que votre carte est bien détectée en mode DFU et taper `lsusb` pour identifier notre carte
 <center><img src="Images\CanBus 4.png"></center>
 
-Répeter cette opération jusqu'à l'identification de la carte qui se nomme `0483:df11`
+Répeter cette opération jusqu'à l'identification de la carte qui se nomme `0483:df11` dans mon cas.
 
 <hr>
 
