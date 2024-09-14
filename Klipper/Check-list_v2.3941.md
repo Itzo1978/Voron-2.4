@@ -143,7 +143,7 @@ Ouvrez le fichier et vérifiez le code inséré :
 	
 Pour quitter, appuyer sur CTRL + X
 
-Vous pouvez éteindre l'imprimante, retirer le cable USB et insérer le cable dédié
+Vous pouvez éteindre l'imprimante, retirer le cable USB uniquement et insérer le cable ombilical sur la carte
 
 ### 	Cablage du CAN Bus
 
