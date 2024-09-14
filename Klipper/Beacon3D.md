@@ -1,8 +1,6 @@
 # Installation Beacon3D
 * [Documentation Beacon 3D (en anglais)](https://docs.beacon3d.com/)
 
-Code permettant de modifier la valeur 'TRSYNC_TIMEOUT' dans le fichier 'mcu.py'
-
 ## Install Beacon Klipper Module¶
 Clonez `beacon_klipper` depuis git et exécutez le script d'installation :
 
