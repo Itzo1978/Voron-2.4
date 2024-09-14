@@ -74,6 +74,8 @@ Installez Shake&Tune en l'exécutant via SSH sur votre imprimante :
 
 ## INSTALLATION CANBUS EBB42
 
+Ma version est basée sur le tuto de [Chripink](https://github.com/chripink/CanBus-Tuto) dont je le remercie infiniment
+
 ### 	Sur votre imprimante
 
 Avant de commencer, assurez-vous que votre imprimante est éteinte.
@@ -179,7 +181,7 @@ Flasher votre carte (veuillez remplacer `4b928e40f4ba` par votre numéro identif
     python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 4b928e40f4ba
 	sudo service klipper start
 
-Merci [Chripink](https://github.com/chripink/CanBus-Tuto) pour son incroyable tuto dont je me suis inspiré
+
 
 <hr>
 
