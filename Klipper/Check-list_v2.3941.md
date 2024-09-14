@@ -21,7 +21,7 @@
 * Installation de Klipper (1), Moonraker (2), Mainsail (3) et Crowsnest (14)
 * _En option : Spoolman (13) pour l'ERCF_
 
-<img src="..\Images\kiauh.png">
+<img src="Images\kiauh.png">
 
 <hr>
 
