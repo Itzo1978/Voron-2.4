@@ -51,9 +51,19 @@ Rebooter votre Raspberry et redémarrer votre session
 
 <hr>
 
-<H1>A FAIRE</H1>
-
 ### Installation de [Klippain](https://github.com/Frix-x/klippain)
+
+Lancer la procédure d'installation
+
+    wget -O - https://raw.githubusercontent.com/Frix-x/klippain/main/install.sh | bash
+
+1. Confirmer le souhaite d'installer Klippain par yes `y`
+2. Sélection et installation du MCU : `y`
+3. Choisir votre carte mère : pour ma part `BTT_Octopus (21)`
+4. Carte CanBus EBB42 v1.2 :  pour ma part `BTT EBB36-42 v1.2 (10)`
+5. Carte MMU/ERCF :  pour ma part `BTT_MBB_CAN v1.0 (5)`
+
+
 Intégrer mes fichiers suivants :
 * Répertoire `_MaConfig`
 * fichier `override.cfg`
