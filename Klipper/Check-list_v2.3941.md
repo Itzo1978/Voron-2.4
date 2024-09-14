@@ -1,20 +1,20 @@
 ## Check-list pour une bonne installation
 
 ### Installation Pi Imager
-* Modèle de Raspberry : selon votre modèle
-* Système d'exploitation : voir images ci-dessous
+* **Modèle de Raspberry :** selon votre modèle
+* **Système d'exploitation :** voir images ci-dessous
 
 <center><img src="Images\Raspberry Pi Imager 1.png"></center><br>
 <center><img src="Images\Raspberry Pi Imager 2.png"></center>
 <hr>
 
-### Mise à jour kernel stable linux : 
+### Mise à jour Kernel stable linux : 
 
     sudo apt-get update && sudo apt-get full-upgrade -y
 
 <hr>
 
-### Installation des différent outils : 
+### Installation des différents outils : 
 
     sudo apt-get install git -y && sudo apt-get install dfu-util -y
 
@@ -27,7 +27,7 @@
 
 <center><img src="Images\kiauh.png"></center>
 
-Rebooter votre Raspberry
+Rebooter votre Raspberry et 
 
 <hr>
 
