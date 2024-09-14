@@ -32,10 +32,12 @@ Pour télécharger ce script, il est nécessaire d'avoir installé git. Si vous 
 
     sudo apt-get update && sudo apt-get install git -y
 
+
 2. Etape 2:
 Une fois git installé, utilisez la commande suivante pour télécharger KIAUH dans votre répertoire personnel :
 
     cd ~ && git clone https://github.com/dw-0/kiauh.git
+
 
 3. Etape 3:
 Démarrer KIAUH en copiant la commande ci-dessous :
