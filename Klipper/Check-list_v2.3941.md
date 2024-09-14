@@ -139,9 +139,45 @@ Ouvrez le fichier et vérifiez le code inséré :
 
     sudo nano /etc/network/interfaces.d/can0
 	
-Pour quitter : CTRL + X
+Pour quitter, appuyer sur CTRL + X
 
-Vous pouvez éteindre l'imprimante
+Vous pouvez éteindre l'imprimante, retirer le cable USB et insérer le cable dédié
+
+### Cablage du CAN Bus
+
+Brancher tous les éléments sur la carte (cartouche, sonde, ventilateur) et allumer l'imprimante
+<center><img src="Images\CanBus 8.png"></center>
+
+### Flash Klipper sur EBB
+
+Paramétrer Klipper selon la carte EBB utilisée
+
+    cd ~/klipper
+    make menuconfig
+
+Voici vue sur la configuration à effectuer
+<center><img src="Images\CanBus 9.png"></center>
+
+Quand c'est en ordre, quitter en tapant sur `Q` et confirmer par `Y`
+
+Compilé Klipper 
+
+    make clean
+	make
+	
+Identification du périphérique CAN afin de permettre de connaitre son ID pour le flasher.
+
+    sudo service klipper stop
+	cd ~/klipper/lib/canboot/
+	python3 flash_can.py -q
+
+Un numéro UUID apparait. Veuillez copier ce numéro
+<center><img src="Images\CanBus 10.png"></center>
+
+Flasher votre carte (veuillez remplacer `4b928e40f4ba` par votre numéro identifié)
+
+    python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 4b928e40f4ba
+	sudo service klipper start
 
 <hr>
 
