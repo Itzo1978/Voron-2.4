@@ -1,5 +1,17 @@
 # Check-list pour une bonne installation
 
+## MA CONFIGURATION
+
+* Raspberry PI5
+* Carte mère BTT Octopus
+* EBB42 v1.2
+* Carte U2C
+* Beacon3D
+* Hotend Bambulab
+
+<hr>
+
+
 ## INSTALLATION AVEC RASPBERRY PI IMAGER
 * __Modèle de Raspberry :__ selon votre modèle
 * __Système d'exploitation :__ voir images ci-dessous
