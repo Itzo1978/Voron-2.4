@@ -1,4 +1,4 @@
-# KLIPPER
+# KLIPPAIN
 * [Klippain](https://github.com/Frix-x/klippain)
 * [Shake&Tune](https://github.com/Frix-x/klippain-shaketune)
 	* [Documentation sur Shake&Tune](https://github.com/Frix-x/klippain-shaketune/blob/main/docs/README.md) 

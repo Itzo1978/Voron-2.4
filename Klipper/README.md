@@ -13,7 +13,7 @@
 * [Canbus](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Canbus.md)
 * [Gestion des LEDS](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Gestion_des_LEDS.md)
 * [Kiauh](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Kiauh.md)
-* [Klipper](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Klipper.md)
+* [Klippain](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Klippain.md)
 * [Klipperscreen](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Klipperscreen.md)
 * [TMC Autotune](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Klipper_TMC_Autotune.md)
 * [Webcam](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Webcam.md)
