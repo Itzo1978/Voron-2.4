@@ -5,7 +5,7 @@
 * [X] [Beacon3D](https://beacon3d.com/product/beacon-h/)
 * [X] [GE5C](https://mods.vorondesign.com/details/eB5T2RNQcYI4o6cilhpXEg)
 * [X] [CanBus](https://github.com/chripink/CanBus-Tuto)
-* [X] Ecran BTT PiTFT 5" → en cours de montage
+* [ ] Ecran BTT PiTFT 5" → en cours de montage
 * [ ] [ERCF v2](https://github.com/Enraged-Rabbit-Community/ERCF_v2) → en cours de montage
 
 
