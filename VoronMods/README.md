@@ -2,12 +2,10 @@
 
 ## Les mods utilisés
 * [X] [Voron Stealthburner](https://github.com/VoronDesign/Voron-Stealthburner)
-  * [X] [Voron TAP](https://github.com/VoronDesign/Voron-Tap)
-  * [X] Mellow Full Metal CNC
-* [X] [Led Effect](https://github.com/julianschill/klipper-led_effect)
+* [X] [Beacon3D](https://beacon3d.com/product/beacon-h/)
 * [X] [GE5C](https://mods.vorondesign.com/details/eB5T2RNQcYI4o6cilhpXEg)
 * [X] [CanBus](https://github.com/chripink/CanBus-Tuto)
-* [X] Ecran BTT PiTFT 5"  
+* [X] Ecran BTT PiTFT 5" → en cours de montage
 * [ ] [ERCF v2](https://github.com/Enraged-Rabbit-Community/ERCF_v2) → en cours de montage
 
 
