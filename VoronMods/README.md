@@ -15,4 +15,4 @@
 * [Filtre à air Alveo3D](https://github.com/Itzo1978/Voron-2.4/tree/main/VoronMods/Air%20Filter%20Alveo3D%20for%20Voron%202.4)
 * [AngryCAM C270](https://www.printables.com/fr/model/487010-angrycam-logitech-c270-voron) (→ [Printables](https://www.printables.com/))
 * [Z-Top Idlers](https://github.com/Itzo1978/VoronUsers/tree/Z-Top-Idlers)
-* [PEI stop](https://github.com/Itzo1978/VoronUsers/tree/PEI_Stop)
+* [PEI stop](https://mods.vorondesign.com/details/HPcfxCUYAw8jwTTRJOf9IA)
