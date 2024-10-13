@@ -1,0 +1,22 @@
+{
+    "filament_settings_id": [
+        "Voron Extruder PETG"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "70"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "70"
+    ],
+    "inherits": "Voron Generic PETG",
+    "is_custom_defined": "0",
+    "name": "Voron Extruder PETG",
+    "nozzle_temperature": [
+        "240"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "240"
+    ],
+    "version": "2.1.1.0"
+}

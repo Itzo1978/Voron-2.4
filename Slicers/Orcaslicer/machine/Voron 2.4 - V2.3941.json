@@ -1,0 +1,21 @@
+{
+    "change_filament_gcode": "PAUSE",
+    "from": "User",
+    "inherits": "Voron 2.4 350 0.4 nozzle",
+    "is_custom_defined": "0",
+    "machine_end_gcode": "END_PRINT ;end script from macro",
+    "machine_start_gcode": "START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single] MATERIAL=[filament_type] SIZE={first_layer_print_min[0]}_{first_layer_print_min[1]}_{first_layer_print_max[0]}_{first_layer_print_max[1]} INITIAL_TOOL=[initial_tool]",
+    "max_layer_height": [
+        "0.3"
+    ],
+    "min_layer_height": [
+        "0.08"
+    ],
+    "name": "Voron 2.4 - V2.3941",
+    "print_host": "voron.local",
+    "printer_settings_id": "Voron 2.4 - V2.3941",
+    "retraction_length": [
+        "0.5"
+    ],
+    "version": "2.0.2.0"
+}

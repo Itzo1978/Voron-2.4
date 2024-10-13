@@ -1,0 +1,22 @@
+{
+    "filament_settings_id": [
+        "Overture ASA"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "110"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "110"
+    ],
+    "inherits": "Voron Generic ASA",
+    "is_custom_defined": "0",
+    "name": "Overture ASA",
+    "nozzle_temperature": [
+        "250"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "250"
+    ],
+    "version": "2.1.1.0"
+}

@@ -1,0 +1,11 @@
+{
+    "brim_type": "no_brim",
+    "from": "User",
+    "inherits": "0.20mm Standard @Voron",
+    "is_custom_defined": "0",
+    "name": "0.20mm Voron 2.4 - V2.3941",
+    "print_settings_id": "0.20mm Voron 2.4 - V2.3941",
+    "sparse_infill_density": "40%",
+    "sparse_infill_pattern": "zig-zag",
+    "version": "2.1.1.0"
+}
