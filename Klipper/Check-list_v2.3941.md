@@ -190,10 +190,14 @@ Un numéro UUID apparait. Veuillez copier ce numéro
 
 Flasher votre carte (veuillez remplacer `4b928e40f4ba` par votre numéro identifié)
 
+Il vous faut appuyer sur les 2 boutons de votre CanBus lors du [ENTER].
+
+<center><img src="Images\CanBus 11.png"></center>
+
     python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 4b928e40f4ba
 	sudo service klipper start
 
-<hr
+<hr>
 
 ## GESTION DES LEDS
 * [Led Effect](https://github.com/julianschill/klipper-led_effect)
