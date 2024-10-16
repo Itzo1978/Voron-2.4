@@ -188,13 +188,13 @@ Identification du périphérique CAN afin de permettre de connaitre son ID pour 
 Un numéro UUID apparait. Veuillez copier ce numéro
 <center><img src="Images\CanBus 10.png"></center>
 
-Flasher votre carte (veuillez remplacer `4b928e40f4ba` par votre numéro identifié)
+Flasher votre carte (veuillez remplacer `1469b906a561` par votre numéro identifié)
 
 Il vous faut appuyer sur les 2 boutons de votre CanBus lors du [ENTER].
 
 <center><img src="Images\CanBus 11.png"></center>
 
-    python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 4b928e40f4ba
+    python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 1469b906a561
 	sudo service klipper start
 
 <hr>
