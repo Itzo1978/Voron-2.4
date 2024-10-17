@@ -38,7 +38,9 @@ Après avoir insérer la carte SD dans votre rasperry, allumer votre imprimante 
 <hr>
 <details>
 
-<summary>Installation de [Kiauh](https://github.com/dw-0/kiauh)</summary>
+<summary>Installation de Kiauh</summary>
+
+* Lien : [Kiauh](https://github.com/dw-0/kiauh)
 
 Pour télécharger ce script, il est nécessaire d'avoir installé git. Si vous n'avez pas installé git, ou si vous n'êtes pas sûr, exécutez la commande suivante :
 
