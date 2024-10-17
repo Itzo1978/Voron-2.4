@@ -36,8 +36,9 @@ Après avoir insérer la carte SD dans votre rasperry, allumer votre imprimante 
 
 
 <hr>
+<details>
 
-### 	Installation de [Kiauh](https://github.com/dw-0/kiauh)
+<summary>Installation de [Kiauh](https://github.com/dw-0/kiauh)</summary>
 
 Pour télécharger ce script, il est nécessaire d'avoir installé git. Si vous n'avez pas installé git, ou si vous n'êtes pas sûr, exécutez la commande suivante :
 
@@ -60,6 +61,8 @@ Démarrer KIAUH en copiant la commande ci-dessous :
 Rebooter votre Raspberry et redémarrer votre session
 
 <center><img src="Images\putty 1.png"></center>
+
+</details>
 
 <hr>
 
