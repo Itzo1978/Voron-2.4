@@ -86,7 +86,7 @@ Installez Shake&Tune en l'exécutant via SSH sur votre imprimante :
 
 ## INSTALLATION CANBUS EBB42
 
-Ma version est basée sur le tuto de [Chripink](https://github.com/chripink/CanBus-Tuto) dont je le remercie infiniment
+Ma version est basée sur le tuto de [Esoterical](https://canbus.esoterical.online/) dont je le remercie infiniment
 
 ### 	Sur votre imprimante
 
@@ -101,101 +101,9 @@ Avant de commencer, assurez-vous que votre imprimante est éteinte.
 3. Appuyer sur le bouton DFU __en même temps__ que vous allumer votre imprimante
 <center><img src="Images\CanBus 3.png"></center>
 
-### 	Dans SSH (avec Putty ou autre)
+### 	Installation du CANBUS
 
-Connectez-vous à votre Imprimante en SSH.
-Installez DFU_UTIL avec la commande suivante :
-
-    sudo apt install dfu-util -y
-
-Assurez vous que votre carte est bien détectée en mode DFU et taper `lsusb` pour identifier notre carte
-<center><img src="Images\CanBus 4.png"></center>
-
-Répeter cette opération jusqu'à l'identification de la carte qui se nomme `0483:df11` dans mon cas.
-
-### 	CanBoot
-
-Installation de CanBoot avec compilation pour notre carte MCU
-
-    git clone https://github.com/Arksine/CanBoot
-	cd CanBoot
-	make menuconfig
-
-Voici vue sur la configuration à effectuer
-<center><img src="Images\CanBus 5.png"></center>
-
-Quand c'est en ordre, quitter en tapant sur `Q` et confirmer par `Y`
-
-Créer la compilation en tapant `make`.
-<center><img src="Images\CanBus 6.png"></center>
-
-On peut maintenant flasher le Bootloader qu'on a compilé
-
-    sudo dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000:force:mass-erase -D ~/CanBoot/out/canboot.bin
-
-<center><img src="Images\CanBus 7.png"></center>
-
-### 	Configuration du CAN sur le Raspberry
-Installer nano si ce n'est pas déja fait
-
-    sudo apt update && sudo apt install nano -y
-
-Créer le fichier de configuration pour le port CAN. Copier Coller d'un bloc.
-
-    sudo /bin/sh -c "cat > /etc/network/interfaces.d/can0" << EOF
-    allow-hotplug can0
-    iface can0 can static
-     bitrate 250000
-     up ifconfig \$IFACE txqueuelen 1024
-    EOF
-
-Ouvrez le fichier et vérifiez le code inséré :
-
-    sudo nano /etc/network/interfaces.d/can0
-	
-Pour quitter, appuyer sur CTRL + X
-
-Vous pouvez éteindre l'imprimante, retirer le cable USB uniquement (le jumper reste) et insérer le cable ombilical sur la carte
-
-### 	Cablage du CAN Bus
-
-Brancher tous les éléments sur la carte (cartouche, sonde, ventilateur) et allumer l'imprimante
-<center><img src="Images\CanBus 8.png"></center>
-
-### 	Flash Klipper sur EBB
-
-Paramétrer Klipper selon la carte EBB utilisée
-
-    cd ~/klipper
-    make menuconfig
-
-Voici vue sur la configuration à effectuer
-<center><img src="Images\CanBus 9.png"></center>
-
-Quand c'est en ordre, quitter en tapant sur `Q` et confirmer par `Y`
-
-Compilé Klipper 
-
-    make clean
-	make
-	
-Identification du périphérique CAN afin de permettre de connaitre son ID pour le flasher.
-
-    sudo service klipper stop
-	cd ~/klipper/lib/canboot/
-	python3 flash_can.py -q
-
-Un numéro UUID apparait. Veuillez copier ce numéro
-<center><img src="Images\CanBus 10.png"></center>
-
-Flasher votre carte (veuillez remplacer `1469b906a561` par votre numéro identifié)
-
-Il vous faut appuyer sur les 2 boutons de votre CanBus lors du [ENTER].
-
-<center><img src="Images\CanBus 11.png"></center>
-
-    python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 1469b906a561
-	sudo service klipper start
+Aller sur [Esoterical](https://canbus.esoterical.online/) et suivre pas à pas les indications
 
 <hr>
 
