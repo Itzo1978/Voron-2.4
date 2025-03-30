@@ -86,9 +86,7 @@ Installez Shake&Tune en l'exécutant via SSH sur votre imprimante :
 
 ## INSTALLATION CANBUS EBB42
 
-Ma version est basée sur le tuto de [Esoterical](https://canbus.esoterical.online/) dont je le remercie infiniment
-
-### 	Sur votre imprimante
+### Sur votre imprimante
 
 Avant de commencer, assurez-vous que votre imprimante est éteinte.
 
@@ -101,7 +99,7 @@ Avant de commencer, assurez-vous que votre imprimante est éteinte.
 3. Appuyer sur le bouton DFU __en même temps__ que vous allumer votre imprimante
 <center><img src="Images\CanBus 3.png"></center>
 
-### 	Installation du CANBUS
+### Installation du CANBUS
 
 Aller sur [Esoterical](https://canbus.esoterical.online/) et suivre pas à pas les indications
 
