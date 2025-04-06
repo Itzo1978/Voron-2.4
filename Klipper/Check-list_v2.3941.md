@@ -53,13 +53,55 @@ Démarrer KIAUH en copiant la commande ci-dessous :
 
 
 * Installation de Klipper (1), Moonraker (2), Mainsail (3) et Crowsnest (14)
-* _En option : Spoolman (13) pour l'[ERCF](https://github.com/Enraged-Rabbit-Community/ERCF_v2)_
+* _En option : Spoolman (13) pour la [Box Turtle](https://github.com/ArmoredTurtle/BoxTurtle/)_
 
 <center><img src="Images\kiauh.png"></center>
 
 Rebooter votre Raspberry et redémarrer votre session
 
 <center><img src="Images\putty 1.png"></center>
+
+<hr>
+
+### 	Installation de [Klippain](https://github.com/Frix-x/klippain)
+
+Lancer la procédure d'installation
+
+    wget -O - https://raw.githubusercontent.com/Frix-x/klippain/main/install.sh | bash
+
+1. Confirmer le souhaite d'installer Klippain par yes `y`
+2. Sélection et installation du MCU : `y`
+3. Choisir votre carte mère : pour ma part `BTT_Octopus (21)`
+4. Carte CanBus EBB42 v1.2 :  pour ma part `BTT EBB36-42 v1.2 (10)`
+5. Carte MMU/ERCF :  pour ma part `BTT_MBB_CAN v1.0 (5)`
+
+<hr>
+
+### 	Installation de Shake&Tune
+Installez Shake&Tune en l'exécutant via SSH sur votre imprimante :
+
+    wget -O - https://raw.githubusercontent.com/Frix-x/klippain-shaketune/main/install.sh | bash
+
+<hr>
+
+## INSTALLATION CANBUS EBB42
+
+### Sur votre imprimante
+
+Avant de commencer, assurez-vous que votre imprimante est éteinte.
+
+1. Insérer la prise USB-C sur la carte EBB42 (ou similaire) et sur votre raspberry pour assurer une connexion
+<center><img src="Images\CanBus 1.png"></center>
+
+2. Insérer le jumper sur la carte
+<center><img src="Images\CanBus 2.png"></center>
+
+3. Appuyer sur le bouton DFU __en même temps__ que vous allumer votre imprimante
+<center><img src="Images\CanBus 3.png"></center>
+
+### Installation du CANBUS
+
+Aller sur [Esoterical](https://canbus.esoterical.online/) et suivre pas à pas les indications
 
 <hr>
 
@@ -116,48 +158,6 @@ Lorsque vous êtes satisfait de la resistance entre votre feuille de papier ou d
 La réponse du capteur sera automatiquement mesurée et adaptée à un modèle. Enregistrez les résultats dans votre fichier de configuration :
 
     SAVE_CONFIG
-
-<hr>
-
-### 	Installation de [Klippain](https://github.com/Frix-x/klippain)
-
-Lancer la procédure d'installation
-
-    wget -O - https://raw.githubusercontent.com/Frix-x/klippain/main/install.sh | bash
-
-1. Confirmer le souhaite d'installer Klippain par yes `y`
-2. Sélection et installation du MCU : `y`
-3. Choisir votre carte mère : pour ma part `BTT_Octopus (21)`
-4. Carte CanBus EBB42 v1.2 :  pour ma part `BTT EBB36-42 v1.2 (10)`
-5. Carte MMU/ERCF :  pour ma part `BTT_MBB_CAN v1.0 (5)`
-
-<hr>
-
-### 	Installation de Shake&Tune
-Installez Shake&Tune en l'exécutant via SSH sur votre imprimante :
-
-    wget -O - https://raw.githubusercontent.com/Frix-x/klippain-shaketune/main/install.sh | bash
-
-<hr>
-
-## INSTALLATION CANBUS EBB42
-
-### Sur votre imprimante
-
-Avant de commencer, assurez-vous que votre imprimante est éteinte.
-
-1. Insérer la prise USB-C sur la carte EBB42 (ou similaire) et sur votre raspberry pour assurer une connexion
-<center><img src="Images\CanBus 1.png"></center>
-
-2. Insérer le jumper sur la carte
-<center><img src="Images\CanBus 2.png"></center>
-
-3. Appuyer sur le bouton DFU __en même temps__ que vous allumer votre imprimante
-<center><img src="Images\CanBus 3.png"></center>
-
-### Installation du CANBUS
-
-Aller sur [Esoterical](https://canbus.esoterical.online/) et suivre pas à pas les indications
 
 <hr>
 
