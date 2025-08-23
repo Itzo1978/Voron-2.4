@@ -128,8 +128,31 @@ Rebootez votre Raspberry
 
     sudo reboot now
 
+#### Flashage de la carte mère en mode USB CAN Bridge
 
+Eteindre votre imprimante et insérer un jumper (en violet) sur la carte mère pour le passer en mode DFU
+<center><img src="Images\DFU_octopus.png"></center>
 
+Il faut installer certaines dépendances :
+
+    sudo apt update
+    sudo apt upgrade
+    sudo apt install python3 python3-serial
+
+Installez KATAPULT
+
+    test -e ~/katapult && (cd ~/katapult && git pull) || (cd ~ && git clone https://github.com/Arksine/katapult) ; cd ~
+
+Configurez KATAPULT selon cette image
+<center><img src="Images\Katapult Config.png"></center>
+
+    cd ~/katapult
+    make menuconfig
+
+Confilez le firmware
+
+    make clean
+    make
 
 
 
