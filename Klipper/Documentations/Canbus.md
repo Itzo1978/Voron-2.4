@@ -33,7 +33,7 @@ Vérifier si l'application s'est correctement exécutée
     cat /etc/udev/rules.d/10-can.rules
  
 Cela devrait ressembler à ceci :
-<center><img src="Images\10-can rules.png"></center>
+<center><img src="..\Images\10-can rules.png"></center>
 
 Enfin, pour activer l'interface can0 et définir la vitesse, exécutez la commande suivante :
 
@@ -44,7 +44,7 @@ Vérifier si l'application s'est correctement exécutée
     cat /etc/systemd/network/25-can.network
 
 Cela devrait ressembler à ceci :
-<center><img src="Images\25-can network.png"></center>
+<center><img src="..\Images\25-can network.png"></center>
 
 Rebootez votre Raspberry
 
@@ -53,7 +53,7 @@ Rebootez votre Raspberry
 ### Flashage de la carte mère en mode USB CAN Bridge avec KATAPULT
 
 Eteindre votre imprimante et insérer un jumper (en violet) sur la carte mère pour le passer en mode DFU
-<center><img src="Images\DFU_octopus.png"></center>
+<center><img src="..\Images\DFU_octopus.png"></center>
 
 Il faut installer certaines dépendances :
 
@@ -66,7 +66,7 @@ Installez KATAPULT
     test -e ~/katapult && (cd ~/katapult && git pull) || (cd ~ && git clone https://github.com/Arksine/katapult) ; cd ~
 
 Configurez KATAPULT selon cette image
-<center><img src="Images\Katapult Config.png"></center>
+<center><img src="..\Images\Katapult Config.png"></center>
 
     cd ~/katapult
     make menuconfig
@@ -80,7 +80,7 @@ Vérifier si la carte est bien en mode DFU
 
     lsusb
 	
-<center><img src="Images\confirmation DFU_octopus.png"></center>
+<center><img src="..\Images\confirmation DFU_octopus.png"></center>
 
 Si ce n'est pas le cas, appuyer sur le bouton RESET (en vert sur la vue représentant la carte mère)
 
@@ -95,14 +95,14 @@ Retirez le jumper et faire un reset. Vérifier si la carte est identifiée en KA
     ls /dev/serial/by-id
 
 Je devrais voir `/dev/serial/by-id/usb-katapult_stm32f446xx_260056001251373234333632-if00`
-<center><img src="Images\octopus_identifie_katapult.png"></center>
+<center><img src="..\Images\octopus_identifie_katapult.png"></center>
 
 Si ce n'est pas identifié, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Check-list_v2.3941.md#flashage-de-la-carte-m%C3%A8re-en-mode-usb-can-bridge-avec-katapult)
 
 ### Flashage de la carte mère en mode USB CAN Bridge avec KLIPPER
 
 Configurez KLIPPER selon cette image
-<center><img src="Images\Klipper USB-CAN-Bridge Config.png"></center>
+<center><img src="..\Images\Klipper USB-CAN-Bridge Config.png"></center>
 
     cd ~/klipper
 	make menuconfig
@@ -124,13 +124,13 @@ Vérifier si Geschwister Schneider CAN adapter apparait
 
     lsusb
 
-<center><img src="Images\Geschwister Schneider CAN adapter.png"></center>
+<center><img src="..\Images\Geschwister Schneider CAN adapter.png"></center>
 
 Vérifiez que l'interface can0 est active :
 
     ip -s -d link show can0
 
-<center><img src="Images\can0 active.png"></center>
+<center><img src="..\Images\can0 active.png"></center>
 
 Lancer la requête pour récupérer le canbus_uuid de votre carte mère :
 
@@ -162,7 +162,7 @@ Installez KATAPULT
     test -e ~/katapult && (cd ~/katapult && git pull) || (cd ~ && git clone https://github.com/Arksine/katapult) ; cd ~
 
 Configurez KATAPULT selon cette image
-<center><img src="Images\Katapult Config Toolhead.png"></center>
+<center><img src="..\Images\Katapult Config Toolhead.png"></center>
 
     cd ~/katapult
     make menuconfig
@@ -176,7 +176,7 @@ Vérifier si la Toolhead est bien en mode DFU
 
     lsusb
 	
-<center><img src="Images\confirmation DFU_toolhead.png"></center>
+<center><img src="..\Images\confirmation DFU_toolhead.png"></center>
 
 Si ce n'est pas le cas, éteindre l'imprimante et appuyer sur le bouton RESET de la Toolhead en rallumant l'imprimante
 
@@ -202,7 +202,7 @@ Il est important que le 2ème UUID (`1469b906a561`) doit être en KATAPULT et no
 ### Flashage de la Toolhead avec KLIPPER
 
 Configurez KLIPPER selon cette image
-<center><img src="Images\Klipper Toolhead Config.png"></center>
+<center><img src="..\Images\Klipper Toolhead Config.png"></center>
 
     cd ~/klipper
 	make menuconfig
@@ -224,7 +224,7 @@ Vérifier si tous sont en mode KLIPPER
 
     python3 ~/katapult/scripts/flashtool.py -i can0 -q
 
-<center><img src="Images\UUID.png"></center>
+<center><img src="..\Images\UUID.png"></center>
 
 Ces deux UUID sont à utiliser dans la section [mcu] du fichier de configuration de l'imprimante
 
