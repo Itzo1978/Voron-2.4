@@ -82,11 +82,21 @@ Les informations suivantes sont reprises du site [Esoterical](https://canbus.eso
 
 #### Préparation de l'installation du CANBUS
 
+Make sure the systemd-networkd service is enabled by running
+
     sudo systemctl enable systemd-networkd
+
+then start the service with:
 
     sudo systemctl start systemd-networkd
 
+then check it is running properly with:
+
     systemctl | grep systemd-networkd
+
+and make sure it shows as “loaded active running”
+
+<center><img src="https://canbus.esoterical.online/Getting_Started.html#:~:text=and%20make%20sure%20it%20shows%20as%20%E2%80%9Cloaded%20active%20running%E2%80%9D"></center>
 
     sudo systemctl disable systemd-networkd-wait-online.service
 
