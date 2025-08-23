@@ -172,6 +172,7 @@ Retirez le jumper et faire un reset. Vérifier si la carte est identifiée en KA
 
     ls /dev/serial/by-id
 
+Je devrais voir `/dev/serial/by-id/usb-katapult_stm32f446xx_260056001251373234333632-if00`
 <center><img src="Images\octopus_identifie_katapult.png"></center>
 
 Si ce n'est pas identifié, recommencé la procédure.
