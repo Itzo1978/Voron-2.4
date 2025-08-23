@@ -63,24 +63,9 @@ Rebooter votre Raspberry et redémarrer votre session
 
 ## INSTALLATION CANBUS EBB42
 
-### Sur votre imprimante
-
-Avant de commencer, assurez-vous que votre imprimante est éteinte.
-
-1. Insérer la prise USB-C sur la carte EBB42 (ou similaire) et sur votre raspberry pour assurer une connexion
-<center><img src="Images\CanBus 1.png"></center>
-
-2. Insérer le jumper sur la carte
-<center><img src="Images\CanBus 2.png"></center>
-
-3. Appuyer sur le bouton DFU __en même temps__ que vous allumer votre imprimante
-<center><img src="Images\CanBus 3.png"></center>
-
-### Installation du CANBUS
-
 Les informations suivantes sont reprises du site [Esoterical](https://canbus.esoterical.online/). A suivre pas à pas les indications :
 
-#### Préparation de l'installation du CANBUS
+### Préparation de l'installation du CANBUS
 
 Assurez-vous que le service systemd-networkd est activé :
 
@@ -128,7 +113,7 @@ Rebootez votre Raspberry
 
     sudo reboot now
 
-#### Flashage de la carte mère en mode USB CAN Bridge avec KATAPULT
+### Flashage de la carte mère en mode USB CAN Bridge avec KATAPULT
 
 Eteindre votre imprimante et insérer un jumper (en violet) sur la carte mère pour le passer en mode DFU
 <center><img src="Images\DFU_octopus.png"></center>
@@ -175,9 +160,9 @@ Retirez le jumper et faire un reset. Vérifier si la carte est identifiée en KA
 Je devrais voir `/dev/serial/by-id/usb-katapult_stm32f446xx_260056001251373234333632-if00`
 <center><img src="Images\octopus_identifie_katapult.png"></center>
 
-Si ce n'est pas identifié, recommencé la procédure.
+Si ce n'est pas identifié, [recommencer la procédure]()
 
-#### Flashage de la carte mère en mode USB CAN Bridge avec KLIPPER
+### Flashage de la carte mère en mode USB CAN Bridge avec KLIPPER
 
 Configurez KLIPPER selon cette image
 <center><img src="Images\Klipper USB-CAN-Bridge Config.png"></center>
@@ -219,7 +204,7 @@ Relancer KLIPPER
     sudo service klipper start
 
 
-#### Flashage de la Toolhead avec KATAPULT
+### Flashage de la Toolhead avec KATAPULT
 
 Eteindre votre imprimante
 Brancher le cable USB du Raspberry au Toolhead
@@ -268,9 +253,9 @@ Exécutez la commande suivante pour vérifier si la carte de la tête d'outil es
 
 Je devrais voir `Detected UUID: 147d4dc27d4a, Application: Katapult` (et non Klipper !)
 
-Il est important d'être en KATAPULT et non en KLIPPER. Si ce n'est pas le cas, recommencer la procédure.
+Il est important d'être en KATAPULT et non en KLIPPER. Si ce n'est pas le cas, [recommencer la procédure]().
 
-#### Flashage de la Toolhead avec KLIPPER
+### Flashage de la Toolhead avec KLIPPER
 
 Configurez KLIPPER selon cette image
 <center><img src="Images\Klipper Toolhead Config.png"></center>
