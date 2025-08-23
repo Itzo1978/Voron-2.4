@@ -128,7 +128,7 @@ Rebootez votre Raspberry
 
     sudo reboot now
 
-#### Flashage de la carte mère en mode USB CAN Bridge
+#### Flashage de la carte mère en mode USB CAN Bridge avec KATAPULT
 
 Eteindre votre imprimante et insérer un jumper (en violet) sur la carte mère pour le passer en mode DFU
 <center><img src="Images\DFU_octopus.png"></center>
@@ -154,12 +154,48 @@ Confilez le firmware
     make clean
     make
 
+Vérifier si la carte est bien en mode DFU
 
+    lsusb
+	
+<center><img src="Images\confirmation DFU_octopus.png"></center>
 
+Si ce n'est pas le cas, appuyer sur le bouton RESET (en vert sur la vue représentant la carte mère)
 
+Si c'est le cas
 
+    cd ~/katapult
+    make
+    sudo dfu-util -R -a 0 -s 0x08000000:mass-erase:force:leave -D ~/katapult/out/katapult.bin -d 0483:df11
 
+Retirez le jumper et faire un reset. Vérifier si la carte est identifiée en KATAPULT
 
+    ls /dev/serial/by-id
+
+<center><img src="Images\octopus_identifie_katapult.png"></center>
+
+Si ce n'est pas identifié, recommencé la procédure.
+
+#### Flashage de la carte mère en mode USB CAN Bridge avec KLIPPER
+
+Configurez KLIPPER selon cette image
+<center><img src="Images\Klipper USB-CAN-Bridge Config.png"></center>
+
+    cd ~/klipper
+	make menuconfig
+
+Confilez le firmware
+
+    make clean
+    make
+
+Utiliser KATAPULT pour flasher KLIPPER
+
+    sudo service klipper stop
+
+Lancer la commande pour flasher la carte mère 
+
+    python3 ~/katapult/scripts/flashtool.py -f ~/klipper/out/klipper.bin -d /dev/serial/by-id/usb-katapult_stm32f446xx_260056001251373234333632-if00
 
 
 
