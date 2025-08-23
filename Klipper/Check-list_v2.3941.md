@@ -110,12 +110,23 @@ Vérifier si l'application s'est correctement exécutée
 
     cat /etc/udev/rules.d/10-can.rules
  
+Cela devrait ressembler à ceci :
 <center><img src="Images\10-can rules.png"></center>
 
+Enfin, pour activer l'interface can0 et définir la vitesse, exécutez la commande suivante :
 
+    echo -e "[Match]\nName=can*\n\n[CAN]\nBitRate=1M\nRestartSec=0.1s\n\n[Link]\nRequiredForOnline=no" | sudo tee /etc/systemd/network/25-can.network > /dev/null
 
+Vérifier si l'application s'est correctement exécutée
 
+    cat /etc/systemd/network/25-can.network
 
+Cela devrait ressembler à ceci :
+<center><img src="Images\25-can network.png"></center>
+
+Rebootez votre Raspberry
+
+    sudo reboot now
 
 
 
