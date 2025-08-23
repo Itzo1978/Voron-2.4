@@ -219,7 +219,7 @@ Relancer KLIPPER
     sudo service klipper start
 
 
-#### Flashage de la Toolhead
+#### Flashage de la Toolhead avec KATAPULT
 
 Eteindre votre imprimante
 Brancher le cable USB du Raspberry au Toolhead
@@ -248,15 +248,48 @@ Confilez le firmware
     make clean
     make
 
-Vérifier si la carte est bien en mode DFU
+Vérifier si la Toolhead est bien en mode DFU
 
     lsusb
+	
+<center><img src="Images\confirmation DFU_toolhead.png"></center>
 
+Si ce n'est pas le cas, éteindre l'imprimante et appuyer sur le bouton RESET de la Toolhead en rallumant l'imprimante
 
+Si c'est le cas
 
+    sudo dfu-util -R -a 0 -s 0x08000000:mass-erase:force:leave -D ~/katapult/out/katapult.bin -d 0483:df11
 
+Eteindre l'imprimante, retirer totalement le cable USB, connecter le cable umbilical sur la toolhead et allumer l'imprimante
 
+Exécutez la commande suivante pour vérifier si la carte de la tête d'outil est connectée au réseau CAN et en mode Katapult.
 
+    python3 ~/katapult/scripts/flashtool.py -i can0 -q
+
+Je devrais voir `Detected UUID: 147d4dc27d4a, Application: Katapult` (et non Klipper !)
+
+Il est important d'être en KATAPULT et non en KLIPPER. Si ce n'est pas le cas, recommencer la procédure.
+
+#### Flashage de la Toolhead avec KLIPPER
+
+Configurez KLIPPER selon cette image
+<center><img src="Images\Klipper Toolhead Config.png"></center>
+
+    cd ~/klipper
+	make menuconfig
+
+Confilez le firmware
+
+    make clean
+    make
+
+Utiliser KATAPULT pour flasher KLIPPER
+
+    sudo service klipper stop
+
+Lancer la commande pour flasher la carte mère 
+
+    python3 ~/katapult/scripts/flashtool.py -i can0 -f ~/klipper/out/klipper.bin -u 147d4dc27d4a
 
 
 
