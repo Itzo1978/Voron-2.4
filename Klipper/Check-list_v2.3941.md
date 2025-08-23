@@ -80,7 +80,7 @@ Avant de commencer, assurez-vous que votre imprimante est éteinte.
 
 Les informations suivantes sont reprises du site [Esoterical](https://canbus.esoterical.online/). A suivre pas à pas les indications :
 
-1. Préparation de l'installation du CANBUS
+#### Préparation de l'installation du CANBUS
 
     sudo systemctl enable systemd-networkd
     sudo systemctl start systemd-networkd
