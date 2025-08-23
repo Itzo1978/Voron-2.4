@@ -198,9 +198,11 @@ Lancer la commande pour flasher la carte mère
 
     python3 ~/katapult/scripts/flashtool.py -f ~/klipper/out/klipper.bin -d /dev/serial/by-id/usb-katapult_stm32f446xx_260056001251373234333632-if00
 
+Vérifier si Geschwister Schneider CAN adapter apparait
 
+    lsusb
 
-
+<center><img src="Images\Geschwister Schneider CAN adapter.png"></center>
 
 
 
