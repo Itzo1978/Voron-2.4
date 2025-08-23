@@ -199,6 +199,8 @@ Lancer la requête pour récupérer le canbus_uuid de votre carte mère :
 
     ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 	
+Je devrais voir `Detected UUID: 147d4dc27d4a, Application: Klipper`
+
 Relancer KLIPPER
 
     sudo service klipper start
@@ -251,9 +253,14 @@ Exécutez la commande suivante pour vérifier si la carte de la tête d'outil es
 
     python3 ~/katapult/scripts/flashtool.py -i can0 -q
 
-Je devrais voir `Detected UUID: 147d4dc27d4a, Application: Katapult` (et non Klipper !)
+Je devrais voir 2 lignes identiques :
+* `Detected UUID: 147d4dc27d4a, Application: Klipper` 
+* `Detected UUID: 1469b906a561, Application: Katapult`
 
-Il est important d'être en KATAPULT et non en KLIPPER. Si ce n'est pas le cas, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Check-list_v2.3941.md#flashage-de-la-toolhead-avec-katapult).
+`147d4dc27d4a` correspond à la carte mère
+`1469b906a561` correspond à la Toolhead
+
+Il est important que le 2ème UUID (`1469b906a561`) doit être en KATAPULT et non en KLIPPER. Si ce n'est pas le cas, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Check-list_v2.3941.md#flashage-de-la-toolhead-avec-katapult).
 
 ### Flashage de la Toolhead avec KLIPPER
 
@@ -274,20 +281,19 @@ Utiliser KATAPULT pour flasher KLIPPER
 
 Lancer la commande pour flasher la carte mère 
 
-    python3 ~/katapult/scripts/flashtool.py -i can0 -f ~/klipper/out/klipper.bin -u 147d4dc27d4a
+    python3 ~/katapult/scripts/flashtool.py -i can0 -f ~/klipper/out/klipper.bin -u 1469b906a561
 
+Vérifier si tous sont en mode KLIPPER
 
+    python3 ~/katapult/scripts/flashtool.py -i can0 -q
 
+<center><img src="Images\UUID.png"></center>
 
+Ces deux UUID sont à utiliser dans la section [mcu] du fichier de configuration de l'imprimante
 
+Redémarrez le service Klipper
 
-
-
-
-
-
-
-
+    sudo service klipper start
 
 <hr>
 
