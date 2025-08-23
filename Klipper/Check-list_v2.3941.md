@@ -5,9 +5,9 @@
 * Raspberry PI5
 * Carte mère BTT Octopus
 * EBB42 v1.2
-* Carte U2C
 * Beacon3D
 * Hotend Bambulab
+* StealthMax
 
 <hr>
 
@@ -52,7 +52,7 @@ Démarrer KIAUH en copiant la commande ci-dessous :
     ./kiauh/kiauh.sh
 
 
-* Installation de Klipper (1), Moonraker (2), Mainsail (3) et Crowsnest (14)
+* Installation de Klipper (1), Moonraker (2), Mainsail (3), KlipperScreen (5) et Crowsnest (14)
 * _En option : Spoolman (13) pour la [Box Turtle](https://github.com/ArmoredTurtle/BoxTurtle/)_
 
 <center><img src="Images\kiauh.png"></center>
