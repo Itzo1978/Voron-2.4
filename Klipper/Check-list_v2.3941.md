@@ -204,10 +204,53 @@ Vérifier si Geschwister Schneider CAN adapter apparait
 
 <center><img src="Images\Geschwister Schneider CAN adapter.png"></center>
 
+Vérifiez que l'interface can0 est active :
+
+    ip -s -d link show can0
+
+<center><img src="Images\can0 active.png"></center>
+
+Lancer la requête pour récupérer le canbus_uuid de votre carte mère :
+
+    ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
+	
+Relancer KLIPPER
+
+    sudo service klipper start
 
 
+#### Flashage de la Toolhead
 
+Eteindre votre imprimante
+Brancher le cable USB du Raspberry au Toolhead
+S'assurer le cable umbilical toolhead soit déconnecté
 
+Appuyer sur le bouton RESET de la Toolhead en rallumant l'imprimante
+
+Il faut installer certaines dépendances :
+
+    sudo apt update
+    sudo apt upgrade
+    sudo apt install python3 python3-serial
+
+Installez KATAPULT
+
+    test -e ~/katapult && (cd ~/katapult && git pull) || (cd ~ && git clone https://github.com/Arksine/katapult) ; cd ~
+
+Configurez KATAPULT selon cette image
+<center><img src="Images\Katapult Config Toolhead.png"></center>
+
+    cd ~/katapult
+    make menuconfig
+
+Confilez le firmware
+
+    make clean
+    make
+
+Vérifier si la carte est bien en mode DFU
+
+    lsusb
 
 
 
