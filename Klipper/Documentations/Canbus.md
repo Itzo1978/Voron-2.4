@@ -224,7 +224,7 @@ Vérifier si tous sont en mode KLIPPER
 
     python3 ~/katapult/scripts/flashtool.py -i can0 -q
 
-<center><img src="Images\UUID.png"></center>
+<center><img src=".\Images\UUID.png"></center>
 
 Ces deux UUID sont à utiliser dans la section [mcu] du fichier de configuration de l'imprimante
 
