@@ -82,28 +82,37 @@ Les informations suivantes sont reprises du site [Esoterical](https://canbus.eso
 
 #### Préparation de l'installation du CANBUS
 
-Make sure the systemd-networkd service is enabled by running
+Assurez-vous que le service systemd-networkd est activé :
 
     sudo systemctl enable systemd-networkd
 
-then start the service with:
+Démarrez le service :
 
     sudo systemctl start systemd-networkd
 
-then check it is running properly with:
+Vérifiez qu'il fonctionne correctement :
 
     systemctl | grep systemd-networkd
 
-and make sure it shows as “loaded active running”
+Assurez-vous qu'il s'affiche comme « loaded active running ».
 
-<center><img src="https://canbus.esoterical.online/Getting_Started.html#:~:text=and%20make%20sure%20it%20shows%20as%20%E2%80%9Cloaded%20active%20running%E2%80%9D"></center>
+<center><img src="Images\loaded active running.png"></center>
+
+Désactiver complètement le service wait-online :
 
     sudo systemctl disable systemd-networkd-wait-online.service
+	
+Configurez « txqueuelen » pour l'interface :
 
     echo -e 'SUBSYSTEM=="net", ACTION=="change|add", KERNEL=="can*"  ATTR{tx_queue_len}="128"' | sudo tee /etc/udev/rules.d/10-can.rules > /dev/null
 
+Vérifier si l'application s'est correctement exécutée
 
-XXX
+   cat /etc/udev/rules.d/10-can.rules
+   
+<center><img src="Images\10-can rules.png"></center>
+
+
 
 
 
