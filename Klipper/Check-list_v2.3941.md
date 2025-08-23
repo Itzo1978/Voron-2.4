@@ -108,8 +108,8 @@ Configurez « txqueuelen » pour l'interface :
 
 Vérifier si l'application s'est correctement exécutée
 
-   cat /etc/udev/rules.d/10-can.rules
-   
+    cat /etc/udev/rules.d/10-can.rules
+ 
 <center><img src="Images\10-can rules.png"></center>
 
 
