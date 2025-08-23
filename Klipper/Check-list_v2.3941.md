@@ -83,12 +83,10 @@ Les informations suivantes sont reprises du site [Esoterical](https://canbus.eso
 1. Préparation de l'installation du CANBUS
 
     sudo systemctl enable systemd-networkd
-
     sudo systemctl start systemd-networkd
-
     systemctl | grep systemd-networkd
 
-
+XXX
 
 
 
