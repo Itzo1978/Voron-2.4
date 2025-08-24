@@ -56,6 +56,7 @@ Après avoir insérer la carte SD dans votre rasperry, allumer votre imprimante 
 
 * _MaConfig
   - beacon.cfg
+  - blobifier.cfg
   - calibrate_flow.cfg
   - calibrate_pa.cfg
   - led_effect.cfg
