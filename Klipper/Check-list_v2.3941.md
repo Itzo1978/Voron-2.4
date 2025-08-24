@@ -51,8 +51,13 @@ Après avoir insérer la carte SD dans votre rasperry, allumer votre imprimante 
 
 ### Fichiers customisés
 
-Intégrer mes fichiers suivants :
-* Répertoire `_MaConfig`
-* fichier `override.cfg`
+[Intégrer mes fichiers suivants](https://github.com/Itzo1978/Voron-2.4/tree/main/Klipper/Config%20Klipper)
+
+_MaConfig
+mcu.cfg
+moonraker.conf
+overrides.cfg
+printer.cfg
+variables.cfg
 
 <hr>
