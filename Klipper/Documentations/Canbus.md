@@ -100,7 +100,7 @@ Je devrais voir `/dev/serial/by-id/usb-katapult_stm32f446xx_26005600125137323433
 <center><img src="..\Images\octopus_identifie_katapult.png"></center>
 
 > [!WARNING]
-> Si ce n'est pas identifié, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Check-list_v2.3941.md#flashage-de-la-carte-m%C3%A8re-en-mode-usb-can-bridge-avec-katapult)
+> Si ce n'est pas identifié, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Canbus.md#flashage-de-la-carte-m%C3%A8re-en-mode-usb-can-bridge-avec-katapult)
 
 <hr>
 
@@ -204,7 +204,7 @@ Je devrais voir 2 lignes identiques :
 `1469b906a561` correspond à la Toolhead
 
 > [!WARNING]
-> Il est important que le 2ème UUID (`1469b906a561`) doit être en KATAPULT et non en KLIPPER. Si ce n'est pas le cas, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Check-list_v2.3941.md#flashage-de-la-toolhead-avec-katapult).
+> Il est important que le 2ème UUID (`1469b906a561`) doit être en KATAPULT et non en KLIPPER. Si ce n'est pas le cas, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Canbus.md#flashage-de-la-toolhead-avec-katapult).
 
 <hr>
 
