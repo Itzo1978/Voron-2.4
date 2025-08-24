@@ -97,7 +97,8 @@ Retirez le jumper et faire un reset. Vérifier si la carte est identifiée en KA
 Je devrais voir `/dev/serial/by-id/usb-katapult_stm32f446xx_260056001251373234333632-if00`
 <center><img src="..\Images\octopus_identifie_katapult.png"></center>
 
-Si ce n'est pas identifié, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Check-list_v2.3941.md#flashage-de-la-carte-m%C3%A8re-en-mode-usb-can-bridge-avec-katapult)
+> [!WARNING]
+> Si ce n'est pas identifié, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Check-list_v2.3941.md#flashage-de-la-carte-m%C3%A8re-en-mode-usb-can-bridge-avec-katapult)
 
 ### Flashage de la carte mère en mode USB CAN Bridge avec KLIPPER
 
@@ -197,7 +198,8 @@ Je devrais voir 2 lignes identiques :
 `147d4dc27d4a` correspond à la carte mère
 `1469b906a561` correspond à la Toolhead
 
-Il est important que le 2ème UUID (`1469b906a561`) doit être en KATAPULT et non en KLIPPER. Si ce n'est pas le cas, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Check-list_v2.3941.md#flashage-de-la-toolhead-avec-katapult).
+> [!WARNING]
+> Il est important que le 2ème UUID (`1469b906a561`) doit être en KATAPULT et non en KLIPPER. Si ce n'est pas le cas, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Check-list_v2.3941.md#flashage-de-la-toolhead-avec-katapult).
 
 ### Flashage de la Toolhead avec KLIPPER
 

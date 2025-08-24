@@ -3,8 +3,22 @@
 * [Shake&Tune](https://github.com/Frix-x/klippain-shaketune)
 	* [Documentation sur Shake&Tune](https://github.com/Frix-x/klippain-shaketune/blob/main/docs/README.md) 
 
+Pour installer Klippain :
 
-### Installation de Shake&Tune
+    wget -O - https://raw.githubusercontent.com/Frix-x/klippain/main/install.sh | bash
+
+1. Confirmer le souhaite d'installer Klippain par yes `y`
+2. Sélection et installation du MCU : `y`
+3. Choisir votre carte mère : pour ma part `BTT_Octopus`
+4. Carte CanBus EBB42 v1.2 :  pour ma part `BTT EBB36-42 v1.2`
+
+Pour désinstaller KLIPPAIN
+
+    wget -O - https://raw.githubusercontent.com/Frix-x/klippain/main/uninstall.sh | bash
+
+<hr> 
+
+# Shake&Tune
 Installez Shake&Tune en l'exécutant via SSH sur votre imprimante :
 
     wget -O - https://raw.githubusercontent.com/Frix-x/klippain-shaketune/main/install.sh | bash
