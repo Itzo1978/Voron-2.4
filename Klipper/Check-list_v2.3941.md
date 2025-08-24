@@ -40,7 +40,7 @@ Après avoir insérer la carte SD dans votre rasperry, allumer votre imprimante 
 
 - [ ] [Kiauh](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Kiauh.md)
 - [ ] [CANBUS](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Canbus.md)
-- [ ] [Klippain et Shake&Tune](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Klippain.md
+- [ ] [Klippain et Shake&Tune](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Klippain.md)
 - [ ] [Gestion des LEDs](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Gestion_des_LEDS.md)
 - [ ] [TMC Auto Tune](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Klipper_TMC_Autotune.md)
 - [ ] [Beacon 3D](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Beacon3D.md)
