@@ -53,11 +53,20 @@ Après avoir insérer la carte SD dans votre rasperry, allumer votre imprimante 
 
 [Intégrer mes fichiers suivants](https://github.com/Itzo1978/Voron-2.4/tree/main/Klipper/Config%20Klipper)
 
-_MaConfig
-mcu.cfg
-moonraker.conf
-overrides.cfg
-printer.cfg
-variables.cfg
+* _MaConfig
+  - beacon.cfg
+  - calibrate_flow.cfg
+  - calibrate_pa.cfg
+  - led_effect.cfg
+  - macro_perso.cfg
+  - macros_filament.cfg
+  - test_speed.cfg
+  - timelapse.cfg
+  - tmc_autotune.cfg
+* mcu.cfg
+* moonraker.conf
+* overrides.cfg
+* printer.cfg
+* variables.cfg
 
 <hr>

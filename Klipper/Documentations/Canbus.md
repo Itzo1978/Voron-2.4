@@ -2,7 +2,7 @@
 	
 Les informations suivantes sont reprises du site [Esoterical](https://canbus.esoterical.online/). A suivre pas à pas les indications :
 
-### Préparation de l'installation du CANBUS
+## Préparation de l'installation du CANBUS
 
 Assurez-vous que le service systemd-networkd est activé :
 
@@ -50,7 +50,9 @@ Rebootez votre Raspberry
 
     sudo reboot now
 
-### Flashage de la carte mère en mode USB CAN Bridge avec KATAPULT
+<hr>
+
+## Flashage de la carte mère en mode USB CAN Bridge avec KATAPULT
 
 Eteindre votre imprimante et insérer un jumper (en violet) sur la carte mère pour le passer en mode DFU
 <center><img src="..\Images\DFU_octopus.png"></center>
@@ -100,7 +102,9 @@ Je devrais voir `/dev/serial/by-id/usb-katapult_stm32f446xx_26005600125137323433
 > [!WARNING]
 > Si ce n'est pas identifié, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Check-list_v2.3941.md#flashage-de-la-carte-m%C3%A8re-en-mode-usb-can-bridge-avec-katapult)
 
-### Flashage de la carte mère en mode USB CAN Bridge avec KLIPPER
+<hr>
+
+## Flashage de la carte mère en mode USB CAN Bridge avec KLIPPER
 
 Configurez KLIPPER selon cette image
 <center><img src="..\Images\Klipper USB-CAN-Bridge Config.png"></center>
@@ -143,8 +147,9 @@ Relancer KLIPPER
 
     sudo service klipper start
 
+<hr>
 
-### Flashage de la Toolhead avec KATAPULT
+## Flashage de la Toolhead avec KATAPULT
 
 Eteindre votre imprimante
 Brancher le cable USB du Raspberry au Toolhead
@@ -201,7 +206,9 @@ Je devrais voir 2 lignes identiques :
 > [!WARNING]
 > Il est important que le 2ème UUID (`1469b906a561`) doit être en KATAPULT et non en KLIPPER. Si ce n'est pas le cas, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Check-list_v2.3941.md#flashage-de-la-toolhead-avec-katapult).
 
-### Flashage de la Toolhead avec KLIPPER
+<hr>
+
+## Flashage de la Toolhead avec KLIPPER
 
 Configurez KLIPPER selon cette image
 <center><img src="..\Images\Klipper Toolhead Config.png"></center>
