@@ -197,14 +197,12 @@ Exécutez la commande suivante pour vérifier si la carte de la tête d'outil es
     python3 ~/katapult/scripts/flashtool.py -i can0 -q
 
 Je devrais voir 2 lignes identiques :
-* `Detected UUID: 147d4dc27d4a, Application: Klipper` 
-* `Detected UUID: 1469b906a561, Application: Katapult`
-
-`147d4dc27d4a` correspond à la carte mère
-`1469b906a561` correspond à la Toolhead
+* `Detected UUID: 147d4dc27d4a, Application: Klipper` qui correspond à la carte mère
+* `Detected UUID: 1469b906a561, Application: Katapult` qui correspond à la Toolhead
 
 > [!WARNING]
-> Il est important que le 2ème UUID (`1469b906a561`) doit être en KATAPULT et non en KLIPPER. Si ce n'est pas le cas, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Canbus.md#flashage-de-la-toolhead-avec-katapult).
+> Il est important que le 2ème UUID (`1469b906a561`) doit être en KATAPULT et non en KLIPPER.
+> Si ce n'est pas le cas, [recommencer la procédure](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Canbus.md#flashage-de-la-toolhead-avec-katapult).
 
 <hr>
 
