@@ -82,6 +82,6 @@ Vérifier si la carte est identifiée en KATAPULT
 
 Je devrais voir `usb-Klipper_stm32h723xx_180019000551333235393937-if00`
 
+Serial à coller dans le fichier `AFC_Turtle_1.cfg`
 
->
-serial: /dev/serial/by-id/usb-Klipper_stm32h723xx_180019000551333235393937-if00
+    serial: /dev/serial/by-id/usb-Klipper_stm32h723xx_180019000551333235393937-if00
