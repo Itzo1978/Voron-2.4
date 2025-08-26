@@ -44,7 +44,7 @@ Vérifier si la carte est identifiée en KATAPULT
 
     ls /dev/serial/by-id
 
-Je devrais voir `/dev/serial/by-id/usb-katapult_stm32h723xx_180019000551333235393937-if00
+Je devrais voir `/dev/serial/by-id/usb-katapult_stm32h723xx_180019000551333235393937-if00`
 <center><img src="..\Images\BT_identifie_katapult.png"></center>
 
 > [!WARNING]

@@ -44,7 +44,7 @@ Après avoir insérer la carte SD dans votre rasperry, allumer votre imprimante 
 - [ ] [Gestion des LEDs](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Gestion_des_LEDS.md)
 - [ ] [TMC Auto Tune](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Klipper_TMC_Autotune.md)
 - [ ] [Beacon 3D](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Beacon3D.md)
-- [ ] [BoxTurtle](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/BoxTurtle.md))
+- [ ] [BoxTurtle](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/BoxTurtle.md)
 - [ ] [~StealthMax~]()
 - [ ] [~Blobifier~]()
 
