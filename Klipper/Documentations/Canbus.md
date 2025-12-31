@@ -222,8 +222,6 @@ Confilez le firmware
     make clean
     make
 
-## Etape finale
-
 Utiliser KATAPULT pour flasher KLIPPER
 
     sudo service klipper stop
@@ -231,6 +229,8 @@ Utiliser KATAPULT pour flasher KLIPPER
 Lancer la commande pour flasher la carte mère 
 
     python3 ~/katapult/scripts/flashtool.py -i can0 -f ~/klipper/out/klipper.bin -u 1469b906a561
+
+## Etape finale
 
 Vérifier si tous sont en mode KLIPPER
 
