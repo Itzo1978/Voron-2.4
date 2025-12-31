@@ -37,13 +37,13 @@ Cela devrait ressembler à ceci :
 
 Enfin, pour activer l'interface can0 et définir la vitesse, exécutez la commande suivante :
 
-    echo -e "[Match]\nName=can*\n\n[CAN]\nBitRate=1M\nRestartSec=0.1s\n\n[Link]\nRequiredForOnline=no" | sudo tee /etc/systemd/network/25-can.network > /dev/null
+    echo -e "[Match]\nName=can*\n\n[CAN]\nBitRate=1M\n\n[Link]\nRequiredForOnline=no" | sudo tee /etc/systemd/network/25-can.network > /dev/null
 
 Vérifier si l'application s'est correctement exécutée
 
     cat /etc/systemd/network/25-can.network
 
-Cela devrait ressembler à ceci :
+Cela devrait ressembler à ceci (Attention, `RestartSec=0.1s` ne doit plus apparaître):
 <center><img src="..\Images\25-can network.png"></center>
 
 Rebootez votre Raspberry
@@ -53,6 +53,9 @@ Rebootez votre Raspberry
 <hr>
 
 ## Flashage de la carte mère en mode USB CAN Bridge avec KATAPULT
+
+> [!WARNING]
+> Si l'octopus et l'EBB ont déjà été flashé, [aller à l'étape final](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Canbus.md#Etape-finale)
 
 Eteindre votre imprimante et insérer un jumper (en violet) sur la carte mère pour le passer en mode DFU
 <center><img src="..\Images\DFU_octopus.png"></center>
@@ -218,6 +221,8 @@ Confilez le firmware
 
     make clean
     make
+
+## Etape finale
 
 Utiliser KATAPULT pour flasher KLIPPER
 

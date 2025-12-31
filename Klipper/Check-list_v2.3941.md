@@ -30,7 +30,7 @@ Après avoir insérer la carte SD dans votre rasperry, allumer votre imprimante 
 
 <hr>
 
-### 	Installation des différents outils : 
+### Installation des différents outils : 
 
     sudo apt-get install git -y && sudo apt-get install dfu-util -y
 
