@@ -53,10 +53,6 @@ Rebootez votre Raspberry
 <hr>
 
 ## Flashage de la carte mère en mode USB CAN Bridge avec KATAPULT
-
-> [!WARNING]
-> Si l'octopus et l'EBB ont déjà été flashé, [aller à l'étape final](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Canbus.md#Etape-finale)
-
 Eteindre votre imprimante et insérer un jumper (en violet) sur la carte mère pour le passer en mode DFU
 <center><img src="..\Images\DFU_octopus.png"></center>
 
@@ -69,6 +65,11 @@ Il faut installer certaines dépendances :
 Installez KATAPULT
 
     test -e ~/katapult && (cd ~/katapult && git pull) || (cd ~ && git clone https://github.com/Arksine/katapult) ; cd ~
+
+
+> [!WARNING]
+> Si l'octopus et l'EBB ont déjà été flashé, [aller à l'étape final](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Canbus.md#Etape-finale)
+
 
 Configurez KATAPULT selon cette image
 <center><img src="..\Images\Katapult Config.png"></center>
