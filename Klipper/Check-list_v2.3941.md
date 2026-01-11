@@ -36,6 +36,13 @@ Après avoir insérer la carte SD dans votre rasperry, allumer votre imprimante 
 
 <hr>
 
+
+### Installation des dépendances Python pour Klipper : 
+
+    sudo apt update
+    sudo apt install python3-numpy python3-matplotlib libopenblas-dev
+    ~/klippy-env/bin/pip install -v "numpy"
+
 ### Installation des modules dans l'ordre :
 
 - [ ] [Kiauh](https://github.com/Itzo1978/Voron-2.4/blob/main/Klipper/Documentations/Kiauh.md)
